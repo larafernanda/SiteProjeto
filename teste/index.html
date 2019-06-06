@@ -18,8 +18,8 @@
                 <ul>
                     <input placeholder="Login" type="text" />
                     <input placeholder="Senha" type="text" />
-                    <button>Entrar</button>
-                    <input type="button" value="Cadastre-se" onclick="javascript: location.href='formulario/formulario.php';">
+                    <input type="button" class="entra" value="Entrar" onclick="javascript: location.href='';">
+                    <input type="button" class="cadastre" value="Cadastre-se" onclick="javascript: location.href='formulario/formulario.php';">
                 </ul>
             </div>
             </div>
@@ -27,17 +27,16 @@
     </header>
     <main class="col-100 menu-urls">
         <section class="header-2">
-            <div class="menu">
+            <nav class="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#fale">Fale conosco</a></li>
 
                 </ul>
 
-            </div>
+            </nav>
             <section class="busca">
                 <input placeholder="Search Something" type="text" />
             </section>
@@ -58,7 +57,7 @@
 
     <div class="col-100">
         <link rel="stylesheet" href="css/noticias.css">
-        <div class="content texto-destaque">
+        <div id="noticias" class="content texto-destaque">
             <h1> Novidades </h1>
             
 
@@ -125,8 +124,27 @@
                         </div>
                     </div>
                 </div>
+                <footer>
+                    <div class="col-100 footer">
+                        <div id="sobre" class="content">
+                            <div class="col-5">
+                                <h3><b> Sobre a empresa</b></h3>
+                                <p>Somos uma empresa brasileira de desenvolvimento de software e estamos no mercado há mais de 20 anos. </p>
+                                   <p> Fazendo nosso trabalho valer a pena com a satisfação do cliente.</p>
+                               
+                                <span class="clock"> funcionamento 24hrs online</span>
+                                <p class="local"> Icó-CE</p>
+                                <p class="email"> TechSoft@gmail.com</p>
+                                <p class="telefone"> (88) 3561 - 0000</p>
+                        </div>
 
-
+                    </div>
+                </footer>
+                <div class="col-100 footer-2">
+                <div class="content">
+                    <p>© 2019 TechSoft</p>
+                </div>
+                </div>
 
 </body>
 
