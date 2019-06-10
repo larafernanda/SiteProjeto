@@ -1,3 +1,21 @@
+<?php
+session_start();
+require_once('../banco/conexao.php');
+
+if(!isset($_SESSION['id_usuario'])){
+    header("Location: ../index.php");
+}else{
+    $id_usuario = $_SESSION['id_usuario'];
+    $buscar_usuario = "SELECT * FROM dados WHERE id = '$id_usuario'";
+        $resultado_usuario = mysqli_query($conexao, $buscar_usuario);
+        $resultado = mysqli_fetch_assoc($resultado_usuario);
+
+        if(isset($resultado)){
+           $nome_usuario = $resultado['Nome'];         
+        }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -42,7 +60,7 @@
 
                     <div class="form-group">
                         <button type="submit" class="btn btn-success" name="enviar">Enviar</button>
-                        <button type="submit" class="btn btn-primary" onclick="window.location.href='../index.html';" name="voltar">Voltar</button>
+                        <button type="submit" class="btn btn-primary" onclick="window.location.href='../main.php';" name="voltar">Voltar</button>
                     </div>
                 </form>
         </fieldset>

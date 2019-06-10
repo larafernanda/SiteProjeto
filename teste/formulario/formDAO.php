@@ -43,8 +43,8 @@ if(isset($_POST['enviar'])){
    $senha = $_POST['senha'];
    if(empty($_POST['senha'])){
    echo "Campo senha vazio!";
-
    }
+
    $conexao->query("INSERT INTO
    dados(Nome, Sobrenome, Email, Telefone, Usuario, Senha)
    VALUES ('$nome', '$sobrenome','$email', '$telefone', '$usuario', '$senha')") or die($conexao->error);

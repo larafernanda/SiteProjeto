@@ -1,16 +1,18 @@
 .col-3 {
     text-align: center;
     padding-left: 20px;
-    padding-right: 20px; 
+    padding-right: 20px;
     width: 29%;
     position: relative;
     left: -16%;
 }
+
 .bloco-imagem img {
     margin: 0 auto;
     width: 100%;
     height: auto;
 }
+
 .bloco-imagem {
     height: 600px;
     border: 1px solid #c5c5c5;
@@ -18,10 +20,13 @@
     padding-bottom: 15px;
     float: left;
 }
-.bloco-imagem b, p {
+
+.bloco-imagem b,
+p {
     text-align: center;
     font-family: arial;
 }
+
 .bloco-texto {
     margin-top: 2em;
 }
@@ -38,7 +43,6 @@ h3 {
     width: 100%;
     float: left;
     position: relative;
-
 }
 
 .texto-destaque {
@@ -46,15 +50,15 @@ h3 {
 }
 
 .texto-destaque h1 {
-        text-transform: uppercase;
-        font-size: 30px;
-        color: black;
-        font-family: georgia;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: black;
+    font-family: georgia;
 }
+
 .texto-destaque p {
-        font-size: 15px;
-        color: black;
-        text-align: center;
-        font-family: arial;
-      
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-family: arial;
 }

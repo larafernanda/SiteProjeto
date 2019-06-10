@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 03-Jun-2019 às 15:12
+-- Generation Time: 10-Jun-2019 às 15:10
 -- Versão do servidor: 5.7.24
 -- versão do PHP: 7.2.14
 
@@ -38,14 +38,15 @@ CREATE TABLE IF NOT EXISTS `dados` (
   `Usuario` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Senha` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `dados`
 --
 
 INSERT INTO `dados` (`id`, `Nome`, `Sobrenome`, `Email`, `Telefone`, `Usuario`, `Senha`) VALUES
-(2, 'Alicia', 'Ferreira ', 'af_bezerra@yahoo.com.br', '(88) 99805 5252', 'afbezerra00', 'c9p5au8naa');
+(6, 'Alicia', 'Diniz', 'af_bezerra@yahoo.com.br', '(88)8138 6997', 'afbezerra00', '1234'),
+(10, 'Lara', 'Fernanda', 'larafvitoriano@gmail.com', '(88)9989-6455', 'Lara', '1234');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
